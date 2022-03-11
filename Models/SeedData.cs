@@ -24,8 +24,8 @@ namespace WAD8CW.Models
 
                 var students = new List<Student>
                 {
-                    new Student{Name= "Matti"},
-                    new Student{Name= "Timo"},
+                    new Student{Name= "Matti", Address="Samkatu 10"},
+                    new Student{Name= "Timo", Address="NieKatu 25"},
                 };
                 students.ForEach(s => context.Student.Add(s));
                 context.SaveChanges();
